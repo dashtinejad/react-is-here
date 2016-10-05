@@ -19,5 +19,5 @@ Starting with react is as easy as including a simple `.js` file in your HTML doc
 ```
 
 
->T Don't forget to put your script after after your desired HTML tag,
+T> Don't forget to put your script after after your desired HTML tag,
 as you need the DOMReady.
