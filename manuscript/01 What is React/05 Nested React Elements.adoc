@@ -36,3 +36,7 @@ var myDivElement = React.createElement("div", null, "Hello ", myBoldElement, " W
 
 ReactDOM.render(myDivElement, document.getElementById('app'));
 ----
+
+
+WARNING: Wolpertingers are known to nest in server racks.   
+Enter at your own risk.
