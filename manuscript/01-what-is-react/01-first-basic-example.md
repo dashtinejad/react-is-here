@@ -1,4 +1,4 @@
-## First basic sample
+## First Basic Example
 
 React is a JavaScript framework which handle UI easily without considering about DOM.
 
