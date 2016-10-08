@@ -1,8 +1,4 @@
-= What is React
-Doc Writer <mojtaba@gmail.com>
-
-
-== JSX
+## JSX
 
 Handling DOM with React Elements is unavoidable. As we discuss earlier, we should, and we have to do this. Because we want to let the React to handle our needs.
 
@@ -12,32 +8,30 @@ JSX is a concise and familiar syntax for defining tree structures with attribute
 
 For example instead of writing this simple JS line:
 
-[source,javascript]
-----
+```javascript
 var myReactElement = React.createElement("div", null, "Hello React");
-----
+```
 
 You could use JSX and write the simple one:
 
-[source,jsx]
-----
+```jsx
 var myReactElement = <div>Hello React</div>;
-----
+```
 
 And now, you can use nested elements as easy as you do it in regular HTML file:
 
 
-[source,jsx]
-----
+```jsx
 var myReactElement = <div>
   Hello
   <b>Real</b>
   World.
   <i>Wonderful!</i>
 </div>;
-----
+```
 
-However, you can use JSX easily. Because browser doesn't understand it, and your code should compile before executing on the browser.
+However, there is some extra works for making JSX ready to work.
+Because browser doesn't understand it, and your code should compile before executing on the browser.
 
 There are different ways for compiling JSX to regular JavaScript code, the easiest one is Babel.
 
@@ -50,9 +44,7 @@ You can compile your JSX code, with babel, in two ways:
 
 For starting JSX, we use the first method (compiling on the client side). But later, we learn how to compile JSX with other softwares, and use the compiled version in our production website.
 
-[source,javascript]
-----
-
+```javascript
 <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
 <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
 <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
@@ -63,7 +55,7 @@ For starting JSX, we use the first method (compiling on the client side). But la
     var myReactElement = <div>Hello React</div>;
     ReactDOM.render(myReactElement, document.getElementById('app'));
 </script>
-----
+```
 
 There are two importants notes which you should consider about it:
 
@@ -72,14 +64,13 @@ There are two importants notes which you should consider about it:
 
 Also you can use an external `.js` file to achieve this manner:
 
-[source,javascript]
-----
+```javascript
 <script type="text/babel" src="myFirstApp.js"></script>
-----
+```
 
 and just put your JSX code inside it:
-[source,javascript]
-----
+
+```javascript
 var myReactElement = <div>Hello React</div>;
 ReactDOM.render(myReactElement, document.getElementById('app'));
-----
+```
