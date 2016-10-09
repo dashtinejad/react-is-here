@@ -13,7 +13,7 @@ And what you see is something like this:
 
 
 
-![](images/reactjs.jpg)
+![](../images/reactjs.jpg)
 
 
 
